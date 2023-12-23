@@ -1,10 +1,15 @@
-import Logout from "./component/logout";
-import {Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
+import Button from "./component/Button";
 function App() {
   return (
-    <Routes>
-    <Route path="/" element={<Logout/>} />
-    </Routes>
+    <>
+      dbfjs
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Button />} />
+      </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
