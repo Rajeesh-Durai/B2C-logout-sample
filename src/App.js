@@ -1,16 +1,16 @@
-import {BrowserRouter, Routes, Route } from "react-router-dom";
-import Button from "./component/Button";
-function App() {
+import React from 'react';
+import { MsalProvider } from '@azure/msal-react';
+import { msalConfig } from './msalConfig'; // Your MSAL configuration
+import LogoutButton from './LogoutButton';
+
+const App = () => {
   return (
-    <>
-      dbfjs
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Button />} />
-      </Routes>
-      </BrowserRouter>
-    </>
+    <MsalProvider instance={msalConfig}>
+      <div>
+        <LogoutButton />
+      </div>
+    </MsalProvider>
   );
-}
+};
 
 export default App;
