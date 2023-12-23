@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useMsal } from '@azure/msal-react';
 
 const LogoutButton = () => {
@@ -15,21 +15,11 @@ const LogoutButton = () => {
     });
   };
 
-  useEffect(() => {
-    // Check for authenticated user on component mount
-    if (accounts.length > 0) {
-      // User is authenticated
-      // You might want to perform additional actions here if needed
-    }
-  }, [accounts]);
+
 
   return (
     <div>
-      {accounts.length > 0 ? (
         <button onClick={handleLogout}>Logout</button>
-      ) : (
-        <p>User not logged in</p>
-      )}
     </div>
   );
 };
