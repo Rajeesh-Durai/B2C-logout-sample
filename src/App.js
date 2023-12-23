@@ -1,7 +1,7 @@
 import React from 'react';
 import { MsalProvider } from '@azure/msal-react';
 import { msalConfig } from './msalConfig'; // Your MSAL configuration
-import LogoutButton from './LogoutButton';
+import LogoutButton from './component/LogoutButton';
 
 const App = () => {
   return (
