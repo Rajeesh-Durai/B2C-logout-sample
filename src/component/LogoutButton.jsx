@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMsal } from '@azure/msal-react';
 import { PublicClientApplication } from '@azure/msal-browser';
-import { msalConfig } from './msalConfig'; 
+import { msalConfig } from '../msalConfig'; 
 
 const LogoutButton = () => {
   const { instance, accounts } = useMsal();
