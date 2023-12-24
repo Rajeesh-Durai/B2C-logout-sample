@@ -16,9 +16,8 @@ const LogoutButton = () => {
     //   console.error('Logout failed:', error);
     // });
 
-    [6:10 PM] Rajnesh Durai Thanga Raja
-  msalInstance.logout();      // Optionally, redirect to the Azure AD B2C logout endpoint  
-    window.location.href = "https://AssessmentDemo.b2clogin.com/AssessmentDemo.onmicrosoft.com/B2C_1_SuSi/oauth2/v2.0/logout"; };
+    msalInstance.logout();      // Optionally, redirect to the Azure AD B2C logout endpoint  
+    window.location.href = "https://AssessmentDemo.b2clogin.com/AssessmentDemo.onmicrosoft.com/B2C_1_SuSi/oauth2/v2.0/logout";
   };
 
 
